@@ -89,7 +89,7 @@ class Model(nn.Module):
         # x: [Batch, Input length, Channel]
         B, T, N = x.shape
         # embedding x: [B, N, T, D]
-        ##x = self.tokenEmb(x)
+        x = self.tokenEmb(x)
         bias = x
         # [B, N, T, D]
         if self.channel_independence == '1':
