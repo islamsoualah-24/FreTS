@@ -99,3 +99,4 @@ class Model(nn.Module):
         x = x + bias
         x = self.fc(x.reshape(B, N, -1)).permute(0, 2, 1)
         return x
+        
